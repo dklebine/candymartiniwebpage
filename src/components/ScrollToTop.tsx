@@ -26,7 +26,7 @@ const ScrollToTop: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-50 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white p-2 sm:p-3 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl group"
+      className="fixed bottom-4 sm:bottom-8 right-4 sm:right-8 z-50 bg-white/10 hover:bg-white/20 text-white p-2 sm:p-3 rounded-full backdrop-blur-sm border border-white/20 transition-all duration-300 transform hover:scale-105 group"
       aria-label="Scroll to top"
     >
       <div className="animate-bounce-up">
