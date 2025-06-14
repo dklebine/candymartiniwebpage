@@ -24,17 +24,8 @@ const HeroSection: React.FC = () => {
       scale: 0.8 
     });
 
-    // Animation timeline
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: section,
-        start: "top top",
-        end: "bottom top",
-        scrub: 1,
-        pin: true,
-      }
-    });
-
+    // Animation timeline (on page load)
+    const tl = gsap.timeline();
     tl.to([textElement, ctaElement], {
       opacity: 1,
       y: 0,
@@ -43,9 +34,18 @@ const HeroSection: React.FC = () => {
       ease: "power2.out",
       stagger: 0.2
     });
+    // Add 3 bounces to the CTA button after it appears, matching bounce-up effect
+    tl.to(ctaElement, {
+      y: '-25%',
+      duration: 0.25,
+      ease: 'cubic-bezier(0,0,0.2,1)',
+      yoyo: true,
+      repeat: 5, // 3 bounces = 6 moves (up, down, up, down, up, down)
+      onComplete: () => { gsap.set(ctaElement, { y: 0 }); }
+    });
 
     return () => {
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+      tl.kill();
     };
   }, []);
 
@@ -69,8 +69,24 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white max-w-4xl w-full">
           <div ref={textRef}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 text-white leading-tight">
-              Candy Martini Bar
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 scripted-neon leading-tight">
+              {(() => {
+                const text = 'Candy Martini Bar';
+                const colors = [
+                  'neon-pink',
+                  'neon-blue',
+                  'neon-green',
+                  'neon-yellow',
+                  'neon-purple',
+                  'neon-orange',
+                  'neon-red',
+                ];
+                return text.split('').map((char, i) =>
+                  char === ' '
+                    ? ' '
+                    : <span key={i} className={colors[i % colors.length]}>{char}</span>
+                );
+              })()}
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-4 font-light">
               Where Candy Meets Cocktails

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,4 +40,86 @@
   .overflow-x-auto {
     -webkit-overflow-scrolling: touch;
   }
+}
+
+body {
+  @apply bg-black text-white font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+.scripted-neon {
+  font-family: 'Pacifico', cursive;
+  color: #ff3ec8;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #ff3ec8;
+  letter-spacing: 1px;
+}
+
+.neon-pink {
+  color: #ff3ec8;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #ff3ec8;
+}
+
+.neon-blue {
+  color: #00eaff;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #00eaff;
+}
+
+.neon-green {
+  color: #39ff14;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #39ff14;
+}
+
+.neon-yellow {
+  color: #fff700;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #fff700;
+}
+
+.neon-purple {
+  color: #a259ff;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #a259ff;
+}
+
+.neon-orange {
+  color: #ff9900;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #ff9900;
+}
+
+.neon-red {
+  color: #ff1744;
+  font-weight: bold;
+  text-shadow:
+    0 0 2px #fff,
+    0 0 6px #fff,
+    0 0 12px #ff1744;
 }

@@ -168,6 +168,18 @@ const DrinkSlider: React.FC = () => {
     }
   };
 
+  // Helper function to map drink.color to a neon class
+  const getNeonClass = (color: string) => {
+    if (color.includes('pink')) return 'neon-pink';
+    if (color.includes('blue')) return 'neon-blue';
+    if (color.includes('green')) return 'neon-green';
+    if (color.includes('yellow')) return 'neon-yellow';
+    if (color.includes('purple')) return 'neon-purple';
+    if (color.includes('orange')) return 'neon-orange';
+    if (color.includes('red')) return 'neon-red';
+    return 'neon-pink'; // fallback
+  };
+
   if (loading) {
     return (
       <section className="relative h-screen overflow-hidden bg-gradient-to-br from-purple-900 to-pink-900 flex items-center justify-center">
@@ -213,7 +225,7 @@ const DrinkSlider: React.FC = () => {
             {/* Mobile Layout */}
             <div className="slide-content lg:hidden px-4 sm:px-6 max-w-lg mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center">
               <div className="space-y-6">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${getNeonClass(drink.color)}`}>
                   {drink.name}
                 </h2>
                 
@@ -236,7 +248,7 @@ const DrinkSlider: React.FC = () => {
 
                 <div className="space-y-4 text-white">
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white/90 mb-2">
+                    <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
                       {drink.leftText.title}
                     </h3>
                     <p className="text-sm sm:text-base leading-relaxed text-white/80">
@@ -245,7 +257,7 @@ const DrinkSlider: React.FC = () => {
                   </div>
                   
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold text-white/90 mb-2">
+                    <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
                       {drink.rightText.title}
                     </h3>
                     <p className="text-sm sm:text-base leading-relaxed text-white/80">
@@ -264,7 +276,7 @@ const DrinkSlider: React.FC = () => {
             <div className="slide-content hidden lg:grid grid-cols-3 gap-8 px-8 lg:px-16 max-w-7xl mx-auto h-full items-center relative z-10">
               {/* Left Text Column */}
               <div className="text-white space-y-6">
-                <h3 className="text-2xl lg:text-3xl font-bold text-white/90">
+                <h3 className={`text-2xl lg:text-3xl font-bold ${getNeonClass(drink.color)}`}>
                   {drink.leftText.title}
                 </h3>
                 <p className="text-lg lg:text-xl leading-relaxed text-white/80">
@@ -274,7 +286,7 @@ const DrinkSlider: React.FC = () => {
 
               {/* Center Column - Drink Name & Video */}
               <div className="flex flex-col items-center justify-center space-y-8">
-                <h2 className="text-4xl lg:text-6xl font-bold text-center text-white mb-4">
+                <h2 className={`text-4xl lg:text-6xl font-bold text-center mb-4 ${getNeonClass(drink.color)}`}>
                   {drink.name}
                 </h2>
                 <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border border-white/20 backdrop-blur-sm hover:scale-105 transition-transform duration-500 overflow-hidden">
@@ -299,7 +311,7 @@ const DrinkSlider: React.FC = () => {
 
               {/* Right Text Column */}
               <div className="text-white space-y-6">
-                <h3 className="text-2xl lg:text-3xl font-bold text-white/90">
+                <h3 className={`text-2xl lg:text-3xl font-bold ${getNeonClass(drink.color)}`}>
                   {drink.rightText.title}
                 </h3>
                 <p className="text-lg lg:text-xl leading-relaxed text-white/80">

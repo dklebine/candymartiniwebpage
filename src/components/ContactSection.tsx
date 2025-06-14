@@ -37,7 +37,7 @@ const ContactSection: React.FC = () => {
     <section id="contact" ref={sectionRef} className="py-12 sm:py-20 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="animate-in text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
+          <h2 className="animate-in text-3xl sm:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 text-white">
             Visit Us
           </h2>
           <p className="animate-in text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto px-4">
@@ -49,7 +49,7 @@ const ContactSection: React.FC = () => {
           {/* Contact Info */}
           <div className="space-y-6 sm:space-y-8">
             <div className="animate-in">
-              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-pink-300">Get in Touch</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 text-white">Get in Touch</h3>
               
               <div className="space-y-4 sm:space-y-6">
                 <div className="flex items-start space-x-3 sm:space-x-4">
@@ -88,7 +88,7 @@ const ContactSection: React.FC = () => {
             </div>
 
             <div className="animate-in">
-              <h4 className="font-semibold text-base sm:text-lg mb-4 text-purple-300">Follow Us</h4>
+              <h4 className="font-semibold text-base sm:text-lg mb-4 text-white">Follow Us</h4>
               <div className="flex space-x-4 sm:space-x-6">
                 <a href="#" className="text-pink-400 hover:text-pink-300 transition-colors transform hover:scale-110">
                   <Instagram size={28} className="sm:w-8 sm:h-8" />

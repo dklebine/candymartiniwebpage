@@ -206,7 +206,7 @@ const CocktailShowcase: React.FC = () => {
   }
 
   return (
-    <section ref={sectionRef} className="min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-pink-900 overflow-hidden">
+    <section ref={sectionRef} className="bg-black">
       {/* Mobile Layout */}
       <div className="lg:hidden py-8 px-4">
         <div className="max-w-sm mx-auto">
@@ -260,7 +260,7 @@ const CocktailShowcase: React.FC = () => {
       </div>
 
       {/* Desktop Layout */}
-      <div className="hidden lg:flex h-screen">
+      <div className="hidden lg:flex h-screen bg-black">
         {/* Left Visualization - 1/2 width */}
         <div ref={leftVisualizationRef} className="w-1/2 h-full relative">
           <div 

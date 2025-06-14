@@ -18,6 +18,29 @@ export default {
       animation: {
         'bounce-up': 'bounce-up 1s infinite',
       },
+      colors: {
+        black: '#0a0a0a',
+        white: '#fff',
+        neonPink: '#ff3ec8',
+        neonBlue: '#00eaff',
+        neonGreen: '#39ff14',
+        neonYellow: '#fff700',
+        neonPurple: '#a259ff',
+        neonOrange: '#ff9900',
+        neonRed: '#ff1744',
+      },
+      fontFamily: {
+        heading: [
+          '"Montserrat"',
+          '"Inter"',
+          'sans-serif',
+        ],
+        body: [
+          '"Montserrat"',
+          '"Inter"',
+          'sans-serif',
+        ],
+      },
     },
   },
   plugins: [],
