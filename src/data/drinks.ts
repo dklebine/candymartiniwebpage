@@ -31,7 +31,7 @@ export const drinks: Drink[] = [
       content: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim. The ultimate candy cocktail for your inner child!"
     },
     color: "from-pink-400 to-purple-400",
-    image: "/public/gummy-bear-martini.png",
+    image: "/gummy-bear-martini.png",
     videoUrl: "https://www.dropbox.com/scl/fi/43paiogllaxsat3slm3k1/martini-v6.mp4?rlkey=ufk7u3n97liyc25vi598hvlj8&st=v12k15b6&raw=1",
     category: "Candy Martini",
     description: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim.",
@@ -50,7 +50,7 @@ export const drinks: Drink[] = [
       content: "A decadent dessert martini loaded with chocolate, butterscotch, and crunchy treats. It's a sweet tooth's dream come true!"
     },
     color: "from-brown-400 to-yellow-400",
-    image: "/public/martini-splash.png",
+    image: "/martini-splash.png",
     videoUrl: "",
     category: "Candy Martini",
     description: "A decadent dessert martini loaded with chocolate, butterscotch, and crunchy treats.",
@@ -69,7 +69,7 @@ export const drinks: Drink[] = [
       content: "A Vegas twist on the classic margarita, bursting with strawberry flavor and a sweet black sugar rim."
     },
     color: "from-red-400 to-black-400",
-    image: "/public/creamy-cocktail.png",
+    image: "/creamy-cocktail.png",
     videoUrl: "",
     category: "Candy Martini",
     description: "A Vegas twist on the classic margarita, bursting with strawberry flavor and a sweet black sugar rim.",
@@ -88,7 +88,7 @@ export const drinks: Drink[] = [
       content: "A vibrant, ocean-inspired martini with a splash of blue and a school of gummy fish and sharks swimming in every sip!"
     },
     color: "from-blue-400 to-pink-400",
-    image: "/public/sprinkle-martini.png",
+    image: "/sprinkle-martini.png",
     videoUrl: "",
     category: "Candy Martini",
     description: "A vibrant, ocean-inspired martini with a splash of blue and a school of gummy fish and sharks swimming in every sip!",
