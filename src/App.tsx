@@ -7,6 +7,7 @@ import CocktailShowcase from './components/CocktailShowcase';
 import CardSlider from './components/CardSlider';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 const MainSite = () => (
   <div className="overflow-x-hidden">
@@ -16,6 +17,7 @@ const MainSite = () => (
     <CardSlider />
     <ContactSection />
     <Footer />
+    <ScrollToTop />
   </div>
 );
 
