@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
       <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white max-w-4xl w-full">
           <div ref={textRef}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-pink-300 to-purple-300 bg-clip-text text-transparent leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 text-white leading-tight">
               Candy Martini Bar
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-4 font-light">
