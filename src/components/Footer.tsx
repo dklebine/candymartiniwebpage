@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-2 mb-4">
               <Wine className="text-pink-400" size={28} />
               <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent">
-                Sweet Spirits
+                Candy Martini Bar
               </h3>
             </div>
             <p className="text-gray-400 mb-4 max-w-md text-sm sm:text-base">
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
         {/* Bottom */}
         <div className="border-t border-gray-800 pt-6 sm:pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
-            © 2024 Sweet Spirits. All rights reserved.
+            © 2024 Candy Martini Bar. All rights reserved.
           </p>
           <div className="flex items-center space-x-1 text-gray-500 text-xs sm:text-sm">
             <span>Made with</span>
