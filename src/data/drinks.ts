@@ -32,7 +32,7 @@ export const drinks: Drink[] = [
     },
     color: "from-pink-400 to-purple-400",
     image: "https://images.pexels.com/photos/2509781/pexels-photo-2509781.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://www.dropbox.com/scl/fi/43paiogllaxsat3slm3k1/martini-v6.mp4?rlkey=ufk7u3n97liyc25vi598hvlj8&st=v12k15b6&dl=0",
+    videoUrl: "https://www.dropbox.com/scl/fi/43paiogllaxsat3slm3k1/martini-v6.mp4?rlkey=ufk7u3n97liyc25vi598hvlj8&st=v12k15b6&raw=1",
     category: "Sweet Dreams",
     description: "A whimsical blend of premium vodka and cotton candy magic that dissolves on your tongue",
     ingredients: ["Premium Vodka", "Cotton Candy Syrup", "Elderflower Liqueur", "Fresh Lime"],
