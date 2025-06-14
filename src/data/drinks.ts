@@ -21,192 +21,192 @@ export interface Drink {
 export const drinks: Drink[] = [
   {
     id: 1,
-    name: "Cotton Candy Cosmos",
+    name: "Thee Gummy Bear",
     leftText: {
-      title: "Base Spirits",
-      content: "Premium vodka, elderflower liqueur, cotton candy syrup, fresh lime juice"
+      title: "Ingredients",
+      content: "Deep Eddy Peach Vodka, Sour Apple Pucker Liquor, Watermelon Pucker Liquor, Sweet and Sour Mix, Sprite, Gummy bears, Orange Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Flavor Profile",
-      content: "Sweet, floral, and nostalgic with a cloud-like cotton candy garnish that dissolves on your tongue"
+      title: "Description",
+      content: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim. The ultimate candy cocktail for your inner child!"
     },
     color: "from-pink-400 to-purple-400",
     image: "https://images.pexels.com/photos/2509781/pexels-photo-2509781.jpeg?auto=compress&cs=tinysrgb&w=800",
     videoUrl: "https://www.dropbox.com/scl/fi/43paiogllaxsat3slm3k1/martini-v6.mp4?rlkey=ufk7u3n97liyc25vi598hvlj8&st=v12k15b6&raw=1",
-    category: "Sweet Dreams",
-    description: "A whimsical blend of premium vodka and cotton candy magic that dissolves on your tongue",
-    ingredients: ["Premium Vodka", "Cotton Candy Syrup", "Elderflower Liqueur", "Fresh Lime"],
+    category: "Candy Martini",
+    description: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim.",
+    ingredients: ["Deep Eddy Peach Vodka", "Sour Apple Pucker Liquor", "Watermelon Pucker Liquor", "Sweet and Sour Mix", "Sprite", "Gummy bears", "Orange Pucker Powder (rimmed)"],
     rating: 5
   },
   {
     id: 2,
-    name: "Gummy Bear Gimlet",
+    name: "Sinful City",
     leftText: {
       title: "Ingredients",
-      content: "Gin, gummy bear simple syrup, fresh lime juice, elderflower cordial"
+      content: "Chocolate Vodka, Crème De Coco Liquor, Butterscotch Schnapps, Almond Milk, Chocolate Syrup, Milk chocolate pretzels, Yogurt graham crackers, Milk chocolate malt balls, Vanilla frosting, Crushed Oreos (rimmed)"
     },
     rightText: {
-      title: "Experience",
-      content: "Playful and tangy with actual gummy bears infused into the spirit for 24 hours"
+      title: "Description",
+      content: "A decadent dessert martini loaded with chocolate, butterscotch, and crunchy treats. It's a sweet tooth's dream come true!"
     },
-    color: "from-green-400 to-yellow-400",
-    image: "https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Playful Spirits",
-    description: "Playful gin cocktail infused with gummy bear essence for 24 hours",
-    ingredients: ["Premium Gin", "Gummy Bear Syrup", "Fresh Lime", "Elderflower Cordial"],
+    color: "from-brown-400 to-yellow-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A decadent dessert martini loaded with chocolate, butterscotch, and crunchy treats.",
+    ingredients: ["Chocolate Vodka", "Crème De Coco Liquor", "Butterscotch Schnapps", "Almond Milk", "Chocolate Syrup", "Milk chocolate pretzels", "Yogurt graham crackers", "Milk chocolate malt balls", "Vanilla frosting", "Crushed Oreos (rimmed)"],
     rating: 5
   },
   {
     id: 3,
-    name: "Chocolate Mint Martini",
+    name: "High Roller Margarita",
     leftText: {
-      title: "Premium Blend",
-      content: "Dark chocolate vodka, crème de menthe, fresh cream, cocoa powder rim"
+      title: "Ingredients",
+      content: "Lunazul Tequila, Triple Sec, Strawberry Monin, Lime Juice, Sour Mix, Sprite, Strawberry bears, Black sugar crystals (rimmed)"
     },
     rightText: {
-      title: "Indulgence",
-      content: "Rich and decadent, like drinking a liquid mint chocolate truffle"
+      title: "Description",
+      content: "A Vegas twist on the classic margarita, bursting with strawberry flavor and a sweet black sugar rim."
     },
-    color: "from-amber-600 to-amber-800",
-    image: "https://images.pexels.com/photos/1170599/pexels-photo-1170599.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Decadent Delights",
-    description: "Rich chocolate vodka with refreshing mint undertones, like liquid truffle",
-    ingredients: ["Chocolate Vodka", "Crème de Menthe", "Fresh Cream", "Cocoa Powder"],
-    rating: 4
+    color: "from-red-400 to-black-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A Vegas twist on the classic margarita, bursting with strawberry flavor and a sweet black sugar rim.",
+    ingredients: ["Lunazul Tequila", "Triple Sec", "Strawberry Monin", "Lime Juice", "Sour Mix", "Sprite", "Strawberry bears", "Black sugar crystals (rimmed)"],
+    rating: 5
   },
   {
     id: 4,
-    name: "Rainbow Sherbet Splash",
+    name: "A Million Fish in the Sea",
     leftText: {
-      title: "Colorful Mix",
-      content: "White rum, orange liqueur, raspberry syrup, pineapple juice, grenadine"
+      title: "Ingredients",
+      content: "Smirnoff Red, White, and Berry Vodka, Peach Schnapps, Watermelon Liquor, Blue Curacao, Pineapple Juice, Sprite, Gummy fish and sharks, Blue raspberry Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Visual Delight",
-      content: "Layers of vibrant colors that mirror childhood sherbet memories"
+      title: "Description",
+      content: "A vibrant, ocean-inspired martini with a splash of blue and a school of gummy fish and sharks swimming in every sip!"
     },
-    color: "from-orange-400 to-red-400",
-    image: "https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Nostalgic Treats",
-    description: "Colorful layers that taste like childhood memories in liquid form",
-    ingredients: ["White Rum", "Orange Liqueur", "Raspberry Syrup", "Pineapple Juice"],
+    color: "from-blue-400 to-pink-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A vibrant, ocean-inspired martini with a splash of blue and a school of gummy fish and sharks swimming in every sip!",
+    ingredients: ["Smirnoff Red, White, and Berry Vodka", "Peach Schnapps", "Watermelon Liquor", "Blue Curacao", "Pineapple Juice", "Sprite", "Gummy fish and sharks", "Blue raspberry Pucker Powder (rimmed)"],
     rating: 5
   },
   {
     id: 5,
-    name: "Bubblegum Bellini",
+    name: "Vegas Showgirl",
     leftText: {
-      title: "Sparkling Base",
-      content: "Prosecco, bubblegum syrup, peach purée, edible glitter"
+      title: "Ingredients",
+      content: "El Jimador Tequila, Triple Sec, Lime Juice, Sweet and Sour Mix, Cotton candy"
     },
     rightText: {
-      title: "Effervescence",
-      content: "Light, fizzy, and surprisingly sophisticated with a playful bubblegum twist"
+      title: "Description",
+      content: "A show-stopping martini topped with a fluffy mound of cotton candy—Vegas in a glass!"
     },
-    color: "from-pink-300 to-blue-300",
-    image: "https://images.pexels.com/photos/1269043/pexels-photo-1269043.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Sparkling Fun",
-    description: "Sparkling prosecco with a playful bubblegum twist and edible glitter",
-    ingredients: ["Prosecco", "Bubblegum Syrup", "Peach Purée", "Edible Glitter"],
-    rating: 4
+    color: "from-pink-300 to-white-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A show-stopping martini topped with a fluffy mound of cotton candy—Vegas in a glass!",
+    ingredients: ["El Jimador Tequila", "Triple Sec", "Lime Juice", "Sweet and Sour Mix", "Cotton candy"],
+    rating: 5
   },
   {
     id: 6,
-    name: "Caramel Apple Twist",
+    name: "Sour Bear",
     leftText: {
-      title: "Autumn Inspired",
-      content: "Apple brandy, caramel liqueur, fresh apple juice, cinnamon rim"
+      title: "Ingredients",
+      content: "Smirnoff Apple Vodka, Sour Apple Pucker Liquor, Sweet and Sour Mix, Sprite, Sour gummy bears, Green apple Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Seasonal Sweet",
-      content: "Warm spices meet cool cocktail perfection with candied apple garnish"
+      title: "Description",
+      content: "A tart and tangy treat with a punch of apple and a pile of sour gummy bears. Pucker up!"
     },
-    color: "from-yellow-600 to-red-600",
-    image: "https://images.pexels.com/photos/1631679/pexels-photo-1631679.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Seasonal Specials",
-    description: "Autumn flavors in a sophisticated cocktail glass with candied apple garnish",
-    ingredients: ["Apple Brandy", "Caramel Liqueur", "Apple Juice", "Cinnamon"],
+    color: "from-green-400 to-yellow-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A tart and tangy treat with a punch of apple and a pile of sour gummy bears. Pucker up!",
+    ingredients: ["Smirnoff Apple Vodka", "Sour Apple Pucker Liquor", "Sweet and Sour Mix", "Sprite", "Sour gummy bears", "Green apple Pucker Powder (rimmed)"],
     rating: 5
   },
   {
     id: 7,
-    name: "Lollipop Lemon Drop",
+    name: "The Big Bang Theory",
     leftText: {
-      title: "Citrus Forward",
-      content: "Lemon vodka, simple syrup, fresh lemon juice, sugar rim"
+      title: "Ingredients",
+      content: "Evan Williams Whiskey (Vodka/Tequila - Substitutable), Grape Liquor, Strawberry Schnapps, Blackberry Monin, Frosting, Rainbow neon-colored mini candies, Graham crackers, Neon-colored mini candies (side shot)"
     },
     rightText: {
-      title: "Classic Reimagined",
-      content: "Served with an actual lollipop stirrer that enhances the sweetness"
+      title: "Description",
+      content: "A cosmic concoction of whiskey, fruit, and a galaxy of rainbow candies. Served with a side shot of pure fun!"
     },
-    color: "from-yellow-300 to-yellow-500",
-    image: "https://images.pexels.com/photos/2509781/pexels-photo-2509781.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Citrus Classics",
-    description: "Classic lemon drop reimagined with an actual lollipop stirrer",
-    ingredients: ["Lemon Vodka", "Simple Syrup", "Fresh Lemon", "Sugar Rim"],
+    color: "from-purple-400 to-yellow-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A cosmic concoction of whiskey, fruit, and a galaxy of rainbow candies. Served with a side shot of pure fun!",
+    ingredients: ["Evan Williams Whiskey (Vodka/Tequila - Substitutable)", "Grape Liquor", "Strawberry Schnapps", "Blackberry Monin", "Frosting", "Rainbow neon-colored mini candies", "Graham crackers", "Neon-colored mini candies (side shot)"],
     rating: 5
   },
   {
     id: 8,
-    name: "Rock Candy Negroni",
+    name: "Sugar Hero",
     leftText: {
-      title: "Sophisticated Sweet",
-      content: "Gin, sweet vermouth, Campari, rock candy simple syrup"
+      title: "Ingredients",
+      content: "Admiral Nelson's Coconut Rum, Blue Curacao, Pineapple Juice, Club Soda, Sour worms, Blue raspberry Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Adult Candy",
-      content: "The perfect balance of bitter and sweet with crystallized garnish"
+      title: "Description",
+      content: "A heroic blend of coconut, pineapple, and blue curacao, topped with sour worms for a super sweet finish!"
     },
-    color: "from-red-500 to-orange-500",
-    image: "https://images.pexels.com/photos/1283219/pexels-photo-1283219.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Adult Candy",
-    description: "Sophisticated balance of bitter and sweet with crystallized garnish",
-    ingredients: ["Premium Gin", "Sweet Vermouth", "Campari", "Rock Candy Syrup"],
-    rating: 4
+    color: "from-blue-400 to-yellow-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A heroic blend of coconut, pineapple, and blue curacao, topped with sour worms for a super sweet finish!",
+    ingredients: ["Admiral Nelson's Coconut Rum", "Blue Curacao", "Pineapple Juice", "Club Soda", "Sour worms", "Blue raspberry Pucker Powder (rimmed)"],
+    rating: 5
   },
   {
     id: 9,
-    name: "Marshmallow Mule",
+    name: "Watermelon Sugar",
     leftText: {
-      title: "Cozy Comfort",
-      content: "Vanilla vodka, ginger beer, marshmallow syrup, lime juice"
+      title: "Ingredients",
+      content: "Smirnoff Watermelon Vodka, Watermelon Schnapps, Triple Sec, Sprite, Pink Lemonade, Watermelon gummies, Watermelon Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Campfire Vibes",
-      content: "Topped with toasted marshmallows for an interactive drinking experience"
+      title: "Description",
+      content: "A juicy, refreshing martini bursting with watermelon flavor and topped with sweet gummies. Summer in a glass!"
     },
-    color: "from-gray-100 to-yellow-200",
-    image: "https://images.pexels.com/photos/1304540/pexels-photo-1304540.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Cozy Classics",
-    description: "Vanilla vodka with ginger beer and toasted marshmallow garnish",
-    ingredients: ["Vanilla Vodka", "Ginger Beer", "Marshmallow Syrup", "Lime Juice"],
+    color: "from-red-400 to-green-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A juicy, refreshing martini bursting with watermelon flavor and topped with sweet gummies. Summer in a glass!",
+    ingredients: ["Smirnoff Watermelon Vodka", "Watermelon Schnapps", "Triple Sec", "Sprite", "Pink Lemonade", "Watermelon gummies", "Watermelon Pucker Powder (rimmed)"],
     rating: 5
   },
   {
     id: 10,
-    name: "Starlight Surprise",
+    name: "Las Vegas Bombsicle",
     leftText: {
-      title: "Magical Finale",
-      content: "Blue curaçao, silver rum, coconut cream, pineapple juice, edible stars"
+      title: "Ingredients",
+      content: "Smirnoff Red, White, and Blue Island Punch Liquor, Blue Curacao, Sour Mix, Sprite, Gummy popsicles, Red, white, and blue Pucker Powder (rimmed)"
     },
     rightText: {
-      title: "Galaxy in Glass",
-      content: "Color-changing cocktail that shifts from blue to purple with temperature"
+      title: "Description",
+      content: "A patriotic, candy-packed martini with a blast of color and flavor in every sip!"
     },
-    color: "from-blue-500 to-purple-500",
-    image: "https://images.pexels.com/photos/1269043/pexels-photo-1269043.jpeg?auto=compress&cs=tinysrgb&w=800",
-    videoUrl: "https://videos.pexels.com/video-files/3195394/3195394-uhd_2560_1440_25fps.mp4",
-    category: "Magical Moments",
-    description: "Color-changing cocktail that shifts from blue to purple with temperature",
-    ingredients: ["Blue Curaçao", "Silver Rum", "Coconut Cream", "Pineapple Juice", "Edible Stars"],
+    color: "from-blue-400 to-red-400",
+    image: "",
+    videoUrl: "",
+    category: "Candy Martini",
+    description: "A patriotic, candy-packed martini with a blast of color and flavor in every sip!",
+    ingredients: ["Smirnoff Red, White, and Blue Island Punch Liquor", "Blue Curacao", "Sour Mix", "Sprite", "Gummy popsicles", "Red, white, and blue Pucker Powder (rimmed)"],
     rating: 5
   }
 ];
