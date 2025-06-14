@@ -58,11 +58,8 @@ const HeroSection: React.FC = () => {
     <section ref={sectionRef} className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="w-full h-full bg-gradient-to-br from-purple-900 via-purple-800 to-pink-900">
-          {/* Placeholder for video - replace with actual video element */}
-          <div className="w-full h-full flex items-center justify-center text-white/20 text-sm sm:text-xl">
-            [Background Video Will Be Here]
-          </div>
+        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url(/gummy-bear-background.png)' }}>
+          {/* Background image for hero section */}
         </div>
         {/* Overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40"></div>
