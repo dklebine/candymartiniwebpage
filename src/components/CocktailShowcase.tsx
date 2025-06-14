@@ -261,8 +261,8 @@ const CocktailShowcase: React.FC = () => {
 
       {/* Desktop Layout */}
       <div className="hidden lg:flex h-screen">
-        {/* Left Visualization - 1/3 width */}
-        <div ref={leftVisualizationRef} className="w-1/3 h-full relative">
+        {/* Left Visualization - 1/2 width */}
+        <div ref={leftVisualizationRef} className="w-1/2 h-full relative">
           <div 
             className="cocktail-bg absolute inset-0 bg-cover bg-center transition-all duration-500"
             style={{ 
@@ -272,8 +272,8 @@ const CocktailShowcase: React.FC = () => {
           <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
-        {/* Right Section - 2/3 width */}
-        <div className="w-2/3 h-full relative bg-black/10 backdrop-blur-sm flex flex-col justify-center">
+        {/* Right Section - 1/2 width */}
+        <div className="w-1/2 h-full relative bg-black/10 backdrop-blur-sm flex flex-col justify-center">
           <div className="relative">
             {/* Cards Container */}
             <div 
