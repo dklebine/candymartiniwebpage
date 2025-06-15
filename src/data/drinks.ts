@@ -32,7 +32,7 @@ export const drinks: Drink[] = [
     },
     color: "from-pink-400 to-purple-400",
     image: "/gummy-bear-martini.png",
-    videoUrl: "https://www.dropbox.com/scl/fi/43paiogllaxsat3slm3k1/martini-v6.mp4?rlkey=ufk7u3n97liyc25vi598hvlj8&st=v12k15b6&raw=1",
+    videoUrl: "https://www.dropbox.com/scl/fi/l5qoq7lewa50hcp2f9zym/8th-render-test0001-0124.webm?rlkey=5wfa8zqudo8nzjh9ygf1d5lan&st=a3bd955i&raw=1",
     category: "Candy Martini",
     description: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim.",
     ingredients: ["Deep Eddy Peach Vodka", "Sour Apple Pucker Liquor", "Watermelon Pucker Liquor", "Sweet and Sour Mix", "Sprite", "Gummy bears", "Orange Pucker Powder (rimmed)"],

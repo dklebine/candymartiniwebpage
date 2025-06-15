@@ -215,11 +215,9 @@ const DrinkSlider: React.FC = () => {
                 preload="metadata"
               >
                 <source src={drink.videoUrl} type="video/mp4" />
-                {/* Fallback gradient background */}
-                <div className={`w-full h-full bg-gradient-to-br ${drink.color}`}></div>
               </video>
-              {/* Overlay for better text readability */}
-              <div className="absolute inset-0 bg-black/50"></div>
+              {/* Subtle overlay for better text readability */}
+              <div className="absolute inset-0 bg-black opacity-20 pointer-events-none"></div>
             </div>
             
             {/* Mobile Layout */}
@@ -228,24 +226,6 @@ const DrinkSlider: React.FC = () => {
                 <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${getNeonClass(drink.color)}`}>
                   {drink.name}
                 </h2>
-                
-                {/* Video preview circle for mobile */}
-                <div className="w-48 h-48 sm:w-64 sm:h-64 bg-white/10 rounded-full flex items-center justify-center border border-white/20 backdrop-blur-sm hover:scale-105 transition-transform duration-500 mx-auto overflow-hidden">
-                  <video
-                    className="w-full h-full object-cover rounded-full"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                  >
-                    <source src={drink.videoUrl} type="video/mp4" />
-                    <div className="text-white/60 text-center">
-                      <div className="text-4xl sm:text-6xl mb-4">🍸</div>
-                      <p className="text-xs sm:text-sm">[Video Loading]</p>
-                    </div>
-                  </video>
-                </div>
-
                 <div className="space-y-4 text-white">
                   <div>
                     <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
@@ -255,7 +235,6 @@ const DrinkSlider: React.FC = () => {
                       {drink.leftText.content}
                     </p>
                   </div>
-                  
                   <div>
                     <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
                       {drink.rightText.title}
@@ -265,7 +244,6 @@ const DrinkSlider: React.FC = () => {
                     </p>
                   </div>
                 </div>
-
                 <div className="text-center text-white/80 text-lg font-semibold">
                   {index + 1} of {drinks.length}
                 </div>
@@ -284,26 +262,11 @@ const DrinkSlider: React.FC = () => {
                 </p>
               </div>
 
-              {/* Center Column - Drink Name & Video */}
+              {/* Center Column - Drink Name Only */}
               <div className="flex flex-col items-center justify-center space-y-8">
                 <h2 className={`text-4xl lg:text-6xl font-bold text-center mb-4 ${getNeonClass(drink.color)}`}>
                   {drink.name}
                 </h2>
-                <div className="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center border border-white/20 backdrop-blur-sm hover:scale-105 transition-transform duration-500 overflow-hidden">
-                  <video
-                    className="w-full h-full object-cover rounded-full"
-                    muted
-                    loop
-                    playsInline
-                    autoPlay
-                  >
-                    <source src={drink.videoUrl} type="video/mp4" />
-                    <div className="text-white/60 text-center">
-                      <div className="text-6xl mb-4">🍸</div>
-                      <p className="text-sm">[Video Loading]</p>
-                    </div>
-                  </video>
-                </div>
                 <div className="text-center text-white/80 text-xl font-semibold">
                   {index + 1} of {drinks.length}
                 </div>

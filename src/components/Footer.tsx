@@ -39,10 +39,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-semibold mb-3 sm:mb-4 text-purple-300 text-sm sm:text-base">Contact</h4>
             <ul className="space-y-1 sm:space-y-2 text-gray-400 text-sm">
-              <li>123 Sweet Street</li>
-              <li>New York, NY 10001</li>
+              <li>3545 S Las Vegas Blvd Suite L-28</li>
+              <li>Las Vegas, NV 89109</li>
               <li>(555) 123-SWEET</li>
-              <li>info@sweetspirits.com</li>
+              <li>info@ilovesugar.com</li>
             </ul>
           </div>
         </div>

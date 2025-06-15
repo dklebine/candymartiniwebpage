@@ -57,9 +57,8 @@ const ContactSection: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-base sm:text-lg mb-1">Location</h4>
                     <p className="text-gray-300 text-sm sm:text-base">
-                      123 Sweet Street<br />
-                      Downtown District<br />
-                      New York, NY 10001
+                      3545 S Las Vegas Blvd Suite L-28,<br />
+                      Las Vegas, NV 89109
                     </p>
                   </div>
                 </div>
