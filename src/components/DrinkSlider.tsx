@@ -212,6 +212,7 @@ const DrinkSlider: React.FC = () => {
                 muted
                 loop
                 playsInline
+                autoPlay
                 preload="metadata"
               >
                 <source src={drink.videoUrl} type="video/mp4" />
@@ -228,7 +229,7 @@ const DrinkSlider: React.FC = () => {
                 </h2>
                 <div className="space-y-4 text-white">
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${getNeonClass(drink.color)}`}>
                       {drink.leftText.title}
                     </h3>
                     <p className="text-sm sm:text-base leading-relaxed text-white/80">
@@ -236,7 +237,7 @@ const DrinkSlider: React.FC = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg sm:text-xl font-bold neon-purple mb-2">
+                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${getNeonClass(drink.color)}`}>
                       {drink.rightText.title}
                     </h3>
                     <p className="text-sm sm:text-base leading-relaxed text-white/80">
