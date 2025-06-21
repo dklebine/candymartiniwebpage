@@ -21,21 +21,21 @@ export interface Drink {
 export const drinks: Drink[] = [
   {
     id: 1,
-    name: "Thee Gummy Bear",
+    name: "THEE GUMMY BEAR",
     leftText: {
-      title: "Ingredients",
-      content: "Deep Eddy Peach Vodka, Sour Apple Pucker Liquor, Watermelon Pucker Liquor, Sweet and Sour Mix, Sprite, Gummy bears, Orange Pucker Powder (rimmed)"
+      title: "",
+      content: "DEEP EDDY PEACH VODKA, SOUR APPLE PUCKER LIQUOR, SWEET & SOUR MIX, PLUS SPRITE."
     },
     rightText: {
-      title: "Description",
-      content: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim. The ultimate candy cocktail for your inner child!"
+      title: "TOPPED WITH GUMMY BEARS",
+      content: "RIMMED WITH ORANGE PUCKER POWDER"
     },
     color: "from-pink-400 to-purple-400",
     image: "/gummy-bear-martini.png",
-    videoUrl: "/candy_gummy_br_video.mp4",
+    videoUrl: "/gummy-bear-video.mp4",
     category: "Candy Martini",
     description: "A playful, fruity explosion of peach, apple, and watermelon flavors, topped with a mountain of gummy bears and a tangy orange rim.",
-    ingredients: ["Deep Eddy Peach Vodka", "Sour Apple Pucker Liquor", "Watermelon Pucker Liquor", "Sweet and Sour Mix", "Sprite", "Gummy bears", "Orange Pucker Powder (rimmed)"],
+    ingredients: ["Deep Eddy Peach Vodka", "Sour Apple Pucker Liquor", "Sweet and Sour Mix", "Sprite", "Gummy bears", "Orange Pucker Powder (rimmed)"],
     rating: 5
   },
   {

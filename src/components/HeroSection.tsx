@@ -7,18 +7,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
   const ctaRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const section = sectionRef.current;
-    const textElement = textRef.current;
     const ctaElement = ctaRef.current;
 
-    if (!section || !textElement || !ctaElement) return;
+    if (!section || !ctaElement) return;
 
     // Set initial state
-    gsap.set([textElement, ctaElement], { 
+    gsap.set(ctaElement, { 
       opacity: 0, 
       y: 100,
       scale: 0.8 
@@ -26,13 +24,12 @@ const HeroSection: React.FC = () => {
 
     // Animation timeline (on page load)
     const tl = gsap.timeline();
-    tl.to([textElement, ctaElement], {
+    tl.to(ctaElement, {
       opacity: 1,
       y: 0,
       scale: 1,
       duration: 1,
       ease: "power2.out",
-      stagger: 0.2
     });
     // Add 3 bounces to the CTA button after it appears, matching bounce-up effect
     tl.to(ctaElement, {
@@ -58,43 +55,14 @@ const HeroSection: React.FC = () => {
     <section ref={sectionRef} className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url(/gummy-bear-background.png)' }}>
+        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/THE GUMMY BEAR (5).png")' }}>
           {/* Background image for hero section */}
         </div>
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 h-full flex flex-col items-center justify-end pb-32 px-4 sm:px-6 lg:px-8">
         <div className="text-center text-white max-w-4xl w-full">
-          <div ref={textRef}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 scripted-neon leading-tight">
-              {(() => {
-                const text = 'Candy Martini Bar';
-                const colors = [
-                  'neon-pink',
-                  'neon-blue',
-                  'neon-green',
-                  'neon-yellow',
-                  'neon-purple',
-                  'neon-orange',
-                  'neon-red',
-                ];
-                return text.split('').map((char, i) =>
-                  char === ' '
-                    ? ' '
-                    : <span key={i} className={colors[i % colors.length]}>{char}</span>
-                );
-              })()}
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-2 sm:mb-4 font-light">
-              Where Candy Meets Cocktails
-            </p>
-            <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-12 text-gray-200 max-w-2xl mx-auto px-4">
-              Experience our signature candy-inspired martinis in an atmosphere as sweet as our drinks
-            </p>
-          </div>
           
           <button
             ref={ctaRef}

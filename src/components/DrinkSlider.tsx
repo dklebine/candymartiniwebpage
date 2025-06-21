@@ -157,15 +157,11 @@ const DrinkSlider: React.FC = () => {
   }, [selectedDrinkIndex, setSelectedDrinkIndex, drinks, loading]);
 
   const nextSlide = () => {
-    if (!isAnimating && selectedDrinkIndex < drinks.length - 1) {
-      setSelectedDrinkIndex(selectedDrinkIndex + 1);
-    }
+    // Disabled for now
   };
 
   const prevSlide = () => {
-    if (!isAnimating && selectedDrinkIndex > 0) {
-      setSelectedDrinkIndex(selectedDrinkIndex - 1);
-    }
+    // Disabled for now
   };
 
   // Helper function to map drink.color to a neon class
@@ -199,7 +195,7 @@ const DrinkSlider: React.FC = () => {
   return (
     <section ref={containerRef} className="relative h-screen overflow-hidden">
       <div ref={slidesRef} className="flex h-full w-max">
-        {drinks.map((drink, index) => (
+        {drinks.slice(0, 1).map((drink, index) => (
           <div
             key={drink.id}
             className="w-screen h-full flex items-center justify-center relative"
@@ -217,100 +213,46 @@ const DrinkSlider: React.FC = () => {
               >
                 <source src={drink.videoUrl} type="video/mp4" />
               </video>
-              {/* Subtle overlay for better text readability */}
-              <div className="absolute inset-0 bg-black opacity-20 pointer-events-none"></div>
             </div>
             
-            {/* Mobile Layout */}
-            <div className="slide-content lg:hidden px-4 sm:px-6 max-w-lg mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center">
-              <div className="space-y-6">
-                <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${getNeonClass(drink.color)}`}>
+            <div className="absolute inset-0 z-10 p-8 sm:p-12 lg:p-16 flex items-end justify-end">
+              <div className="absolute top-8 left-8">
+                <img src="/logo.png" alt="Candy Martini Bar" className="w-48" />
+              </div>
+
+              {/* Right-aligned text */}
+              <div className="w-2/5 text-right text-white">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}>
                   {drink.name}
                 </h2>
-                <div className="space-y-4 text-white">
-                  <div>
-                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${getNeonClass(drink.color)}`}>
-                      {drink.leftText.title}
-                    </h3>
-                    <p className="text-sm sm:text-base leading-relaxed text-white/80">
-                      {drink.leftText.content}
-                    </p>
-                  </div>
-                  <div>
-                    <h3 className={`text-lg sm:text-xl font-bold mb-2 ${getNeonClass(drink.color)}`}>
-                      {drink.rightText.title}
-                    </h3>
-                    <p className="text-sm sm:text-base leading-relaxed text-white/80">
-                      {drink.rightText.content}
-                    </p>
-                  </div>
+                <div className="mt-6 md:mt-8 space-y-4 md:space-y-6 text-base md:text-lg lg:text-xl font-light uppercase tracking-widest">
+                  <p style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>{drink.leftText.content}</p>
+                  <p style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }} className="mt-4">{drink.rightText.title}</p>
+                  <p style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>{drink.rightText.content}</p>
                 </div>
-                <div className="text-center text-white/80 text-lg font-semibold">
-                  {index + 1} of {drinks.length}
-                </div>
-              </div>
-            </div>
-
-            {/* Desktop Layout */}
-            <div className="slide-content hidden lg:grid grid-cols-3 gap-8 px-8 lg:px-16 max-w-7xl mx-auto h-full items-center relative z-10">
-              {/* Left Text Column */}
-              <div className="text-white space-y-6">
-                <h3 className={`text-2xl lg:text-3xl font-bold ${getNeonClass(drink.color)}`}>
-                  {drink.leftText.title}
-                </h3>
-                <p className="text-lg lg:text-xl leading-relaxed text-white/80">
-                  {drink.leftText.content}
-                </p>
-              </div>
-
-              {/* Center Column - Drink Name Only */}
-              <div className="flex flex-col items-center justify-center space-y-8">
-                <h2 className={`text-4xl lg:text-6xl font-bold text-center mb-4 ${getNeonClass(drink.color)}`}>
-                  {drink.name}
-                </h2>
-                <div className="text-center text-white/80 text-xl font-semibold">
-                  {index + 1} of {drinks.length}
-                </div>
-              </div>
-
-              {/* Right Text Column */}
-              <div className="text-white space-y-6">
-                <h3 className={`text-2xl lg:text-3xl font-bold ${getNeonClass(drink.color)}`}>
-                  {drink.rightText.title}
-                </h3>
-                <p className="text-lg lg:text-xl leading-relaxed text-white/80">
-                  {drink.rightText.content}
-                </p>
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Navigation arrows */}
-      <button
-        onClick={prevSlide}
-        className={`absolute left-2 sm:left-4 lg:left-8 top-1/2 transform -translate-y-1/2 z-20 text-white/80 hover:text-white transition-all duration-300 ${
-          selectedDrinkIndex === 0 || isAnimating ? 'opacity-30 cursor-not-allowed' : 'hover:scale-110'
-        }`}
-        disabled={selectedDrinkIndex === 0 || isAnimating}
-      >
-        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-sm hover:bg-white/10">
-          <ChevronLeft size={20} className="sm:w-6 sm:h-6" />
-        </div>
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className={`absolute right-2 sm:right-4 lg:right-8 top-1/2 transform -translate-y-1/2 z-20 text-white/80 hover:text-white transition-all duration-300 ${
-          selectedDrinkIndex === drinks.length - 1 || isAnimating ? 'opacity-30 cursor-not-allowed' : 'hover:scale-110'
-        }`}
-        disabled={selectedDrinkIndex === drinks.length - 1 || isAnimating}
-      >
-        <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full border border-white/30 flex items-center justify-center backdrop-blur-sm hover:bg-white/10">
-          <ChevronRight size={20} className="sm:w-6 sm:h-6" />
-        </div>
-      </button>
+      {/* Navigation Arrows */}
+      <>
+        <button
+          onClick={prevSlide}
+          disabled
+          className="absolute top-1/2 left-4 -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/20 hover:bg-white/40 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <ChevronLeft size={24} className="text-white" />
+        </button>
+        <button
+          onClick={nextSlide}
+          disabled
+          className="absolute top-1/2 right-4 -translate-y-1/2 z-20 p-2 sm:p-3 bg-white/20 hover:bg-white/40 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <ChevronRight size={24} className="text-white" />
+        </button>
+      </>
     </section>
   );
 };
