@@ -215,13 +215,13 @@ const DrinkSlider: React.FC = () => {
               </video>
             </div>
             
-            <div className="absolute inset-0 z-10 p-8 sm:p-12 lg:p-16 flex items-end justify-end">
-              <div className="absolute top-8 left-8">
-                <img src="/logo.png" alt="Candy Martini Bar" className="w-48" />
+            <div className="absolute inset-0 z-10">
+              <div className="absolute top-4 left-4 sm:top-8 sm:left-8">
+                <img src="/logo.png" alt="Candy Martini Bar" className="w-32 sm:w-48" />
               </div>
 
-              {/* Right-aligned text */}
-              <div className="w-2/5 text-right text-white">
+              {/* Bottom Right Text */}
+              <div className="absolute bottom-4 right-4 sm:bottom-8 sm:right-8 lg:bottom-16 lg:right-16 w-4/5 lg:w-2/5 text-right text-white">
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7)' }}>
                   {drink.name}
                 </h2>

@@ -53,28 +53,37 @@ const HeroSection: React.FC = () => {
 
   return (
     <section ref={sectionRef} className="relative h-screen w-full overflow-hidden">
-      {/* Video Background */}
+      {/* Background */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: 'url("/THE GUMMY BEAR (5).png")' }}>
-          {/* Background image for hero section */}
-        </div>
+        <div 
+          className="w-full h-full bg-cover bg-center" 
+          style={{ backgroundImage: 'url("/THE GUMMY BEAR (8).png")' }}
+        ></div>
+        <div className="absolute inset-0 radial-gradient-overlay"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 h-full flex flex-col items-center justify-end pb-32 px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-4xl w-full">
-          
-          <button
-            ref={ctaRef}
-            onClick={handleReservation}
-            className="group bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 sm:gap-3 mx-auto w-fit"
-          >
-            <Calendar size={20} className="sm:w-6 sm:h-6" />
-            <span className="whitespace-nowrap">Book Your Sweet Experience</span>
-            <div className="w-0 group-hover:w-4 sm:group-hover:w-6 transition-all duration-300 overflow-hidden">
-              →
+      <div className="relative z-10 h-full w-full">
+        <div className="absolute top-[58%] left-1/2 w-full max-w-4xl -translate-x-1/2 -translate-y-1/2 px-4 sm:px-6 lg:px-8">
+          <div className="space-y-8">
+            <div className="text-center">
+              <img src="/logo.png" alt="Candy Martini Bar" className="mx-auto w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg" />
             </div>
-          </button>
+            
+            <div className="text-center text-white w-full">
+              <button
+                ref={ctaRef}
+                onClick={handleReservation}
+                className="group bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center gap-2 sm:gap-3 mx-auto w-fit"
+              >
+                <Calendar size={20} className="sm:w-6 sm:h-6" />
+                <span className="whitespace-nowrap">Book Your Sweet Experience</span>
+                <div className="w-0 group-hover:w-4 sm:group-hover:w-6 transition-all duration-300 overflow-hidden">
+                  →
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
